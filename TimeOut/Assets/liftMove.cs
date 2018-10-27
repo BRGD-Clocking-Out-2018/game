@@ -20,7 +20,7 @@ public class liftMove : MonoBehaviour {
 	}
 
 
-    private void OnCollisionStay2D(Collision2D collision)
+     void OnCollisionStay2D(Collision2D collision)
     {
         if(collision.gameObject.name == "Human")
         {
@@ -34,7 +34,7 @@ public class liftMove : MonoBehaviour {
         } /* else {
 			speed=0;
 		} */
-        if (onElevator == true)
+       if (onElevator == true)
         {
             Movement mv = human.GetComponent<Movement>();
             mv.xspeed = 0;
